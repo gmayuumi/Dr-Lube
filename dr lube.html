@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-      
         :root {
             --azul-escuro: #0a1a3a;
             --azul-meianoite: #061125;
@@ -48,8 +47,6 @@
 
         .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.8s ease-out, transform 0.8s cubic-bezier(0.25, 1, 0.5, 1); }
         .reveal.visible { opacity: 1; transform: translateY(0); }
-
-
         
         header { position: fixed; top: 0; left: 0; width: 100%; padding: 15px 0; z-index: 1000; background: rgba(6, 17, 37, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
         .header-container { display: flex; justify-content: center; align-items: center; }
@@ -57,24 +54,15 @@
         .nav-menu ul li a { color: var(--cinza-texto); text-decoration: none; font-weight: 600; padding-bottom: 5px; transition: all 0.3s ease; }
         .nav-menu ul li a:hover { color: var(--dourado); text-shadow: 0 0 8px var(--dourado-glow); }
         .mobile-menu-icon { display: none; }
-
-
         
         #hero { height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0; background: linear-gradient(rgba(10, 26, 58, 0.9) 0%, rgba(10, 26, 58, 0.5) 100%), url('https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center/cover no-repeat; }
         .hero-content { text-align: center; }
-        
         .hero-logo { display: block; margin: 0 auto 30px auto; }
-       
-        .hero-logo img {
-            height: 200px;
-            filter: drop-shadow(0 0 25px rgba(255,255,255,0.25));
-        }
-        
+        .hero-logo img { height: 200px; filter: drop-shadow(0 0 25px rgba(255,255,255,0.25)); }
         .hero-content h1 { font-size: 4.5rem; font-weight: 800; letter-spacing: -2px; background: linear-gradient(45deg, var(--branco), #e0e0e0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-shadow: 0 0 40px rgba(255,255,255,0.1); }
         .hero-content h1 span { background: linear-gradient(45deg, var(--dourado), #ffdf70); -webkit-background-clip: text; -webkit-text-fill-color: transparent; display: block; }
-        .hero-content p { font-size: 1.4rem; max-width: 650px; margin: 25px auto 40px; color: var(--cinza-texto); }
+        .hero-content p { font-size: 1.4rem; max-width: 750px; margin: 25px auto 40px; color: var(--cinza-texto); }
         
-       
         #servicos-destaque { background-color: var(--azul-meianoite); background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); }
         .servicos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; position: relative; z-index: 1; }
         .servico-card { padding: 40px 30px; text-align: center; border-radius: 12px; border: 1px solid rgba(212, 175, 55, 0.2); background: rgba(10, 26, 58, 0.5); backdrop-filter: blur(10px); transition: all 0.4s ease; }
@@ -84,8 +72,6 @@
         .servico-card h3 { font-size: 1.5rem; color: var(--branco); margin-bottom: 15px; }
         .servico-card p { color: var(--cinza-texto); font-size: 0.95rem; }
 
-
-      
         #todos-servicos { background-color: var(--cinza-claro); }
         #todos-servicos h2 { color: var(--azul-escuro); }
         .tabs-container { max-width: 800px; margin: 40px auto 0; }
@@ -95,10 +81,7 @@
         .tab-pane { display: none; animation: fadeIn 0.5s; }
         @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
         .tab-pane.active { display: block; }
-        
-        .services-item-list {
-            display: flex; flex-direction: column; gap: 15px;
-        }
+        .services-item-list { display: flex; flex-direction: column; gap: 15px; }
         .service-item {
             background-color: #fff; color: #495057; font-size: 1.1rem; font-weight: 600;
             display: flex; align-items: center; gap: 15px;
@@ -114,8 +97,6 @@
         }
         .service-item i { color: var(--vermelho); font-size: 1.3rem; }
         
-
-       
         #diferenciais { background: linear-gradient(rgba(10,26,58,0.95), rgba(10,26,58,0.95)), url('https://images.pexels.com/photos/1707215/pexels-photo-1707215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center/cover; padding-bottom: 200px; }
         .diferenciais-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
         .diferencial-item { display: flex; gap: 20px; align-items: flex-start; margin-bottom: 30px; }
@@ -128,9 +109,23 @@
         .contador h3 { font-size: 3rem; color: var(--azul-meianoite); margin-bottom: 5px; font-weight: 800; }
         .contador p { font-size: 1.1rem; color: var(--azul-meianoite); font-weight: 600; }
 
-
+        #redes-sociais { background-color: var(--azul-meianoite); background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png'); }
+        #redes-sociais h2 { color: var(--branco); }
+        .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .social-card { background: rgba(10, 26, 58, 0.5); border: 1px solid rgba(212, 175, 55, 0.2); backdrop-filter: blur(10px); border-radius: 12px; padding: 40px; text-align: center; transition: all 0.3s ease; }
+        .social-card:hover { transform: translateY(-10px); box-shadow: 0 15px 50px rgba(0,0,0,0.2); border-color: var(--dourado); }
+        .social-card .social-icon { font-size: 4rem; margin-bottom: 20px; }
+        .social-card .instagram {
+            background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .social-card .tiktok { color: var(--branco); text-shadow: 0 0 10px rgba(255,255,255,0.5); }
+        .social-card h3 { font-size: 1.8rem; color: var(--branco); margin-bottom: 10px; }
+        .social-card p { color: var(--cinza-texto); margin-bottom: 25px; }
+        .social-card .cta-button { background: var(--vermelho); color: var(--branco); padding: 14px 30px; font-size: 0.9rem; }
        
-        #localizacao { padding-top: 200px; background: var(--cinza-claro); }
+        #localizacao { background: var(--cinza-claro); }
         #localizacao h2 { color: var(--azul-escuro); }
         .map-container { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
         .mapa iframe { width: 100%; height: 450px; border: none; border-radius: 12px; filter: grayscale(1); transition: 0.3s; }
@@ -140,6 +135,7 @@
         .endereco-info p { font-size: 1.1rem; color: #555; margin-bottom: 15px; display: flex; align-items: center; }
         .endereco-info p i { color: var(--vermelho); margin-right: 15px; font-size: 1.2rem; }
         .endereco-info .cta-button { background: var(--vermelho); color: var(--branco); margin-top: 20px; }
+        
         #faq { background: var(--azul-meianoite); background-image: url('https://www.transparenttextures.com/patterns/carbon-fibre.png');}
         .accordion { max-width: 800px; margin: 40px auto 0; }
         .accordion-item { border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; margin-bottom: 15px; overflow: hidden; }
@@ -148,15 +144,44 @@
         .accordion-item.active .accordion-header i { transform: rotate(135deg); }
         .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
         .accordion-content p { padding: 25px; background: var(--azul-meianoite); color: var(--cinza-texto); }
+        
         #cta-final { background: linear-gradient(rgba(10, 26, 58, 0.95), rgba(6, 17, 37, 0.95)), url('https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center center/cover fixed; text-align: center; color: var(--branco); }
         #cta-final h2 { font-size: 2.8rem; color: var(--branco); margin-bottom: 10px; }
         #cta-final p { font-size: 1.3rem; max-width: 600px; margin: 0 auto 30px; opacity: 0.9; }
+        
         footer { background: #040d1f; padding: 60px 0 20px; text-align: center; border-top: 2px solid var(--dourado); }
         .footer-logo img { height: 60px; margin-bottom: 25px; }
         .social-icons a { color: var(--cinza-texto); font-size: 1.5rem; margin: 0 15px; transition: all 0.3s; }
         .social-icons a:hover { color: var(--dourado); transform: translateY(-5px); }
         .footer-copyright { margin-top: 30px; font-size: 0.9rem; color: #888; }
-        
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+        }
+        .whatsapp-float svg {
+            width: 32px;
+            height: 32px;
+            fill: #fff;
+        }
        
         @media (max-width: 992px) {
             h2 { font-size: 2.2rem; }
@@ -165,6 +190,13 @@
             .diferenciais-img { display: none; }
             .map-container { grid-template-columns: 1fr; }
             .contadores { grid-template-columns: 1fr; gap: 30px; padding: 30px; }
+
+            #diferenciais { padding-bottom: 60px; }
+            .contadores-wrapper { position: relative; transform: none; margin-top: 60px; }
+            #localizacao { padding-top: 100px; }
+            .social-grid { grid-template-columns: 1fr; }
+
+            #localizacao .slanted-divider { display: none; }
         }
         @media (max-width: 768px) {
             .mobile-menu-icon { display: block; z-index: 1001; font-size: 1.5rem; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); }
@@ -178,12 +210,13 @@
         }
         @media (max-width: 576px) {
             section { padding: 80px 0; }
-            #diferenciais { padding-bottom: 150px; }
-            #localizacao { padding-top: 150px; }
+            #diferenciais { padding-bottom: 80px; }
+            #localizacao { padding-top: 80px; }
             .servicos-grid { grid-template-columns: 1fr; }
-            .contadores { grid-template-columns: 1fr; }
+            .contadores-wrapper { margin-top: 0; }
+            .whatsapp-float { width: 50px; height: 50px; bottom: 15px; right: 15px; }
+            .whatsapp-float svg { width: 28px; height: 28px; }
         }
-
     </style>
 </head>
 <body>
@@ -194,6 +227,7 @@
                 <ul>
                     <li><a href="#servicos-destaque">Serviços</a></li>
                     <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#redes-sociais">Redes</a></li>
                     <li><a href="#localizacao">Localização</a></li>
                     <li><a href="#faq">FAQ</a></li>
                 </ul>
@@ -208,8 +242,8 @@
                 <img src="https://i.ibb.co/Y7GDcjMw/DR-LUBE.png" alt="Logo DR LUBE">
             </a>
             <h1 class="reveal">Cuidado Premium, <span>Performance Absoluta.</span></h1>
-            <p class="reveal">Elevamos a estética e o desempenho do seu veículo com tecnologia de ponta e uma paixão inigualável por detalhes.</p>
-            <a href="https://wa.me/5511998362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank" class="cta-button reveal"><i class="fab fa-whatsapp"></i>Fale com um Especialista</a>
+            <p class="reveal">Especialistas em vitrificação de pintura, plásticos e couro. Proteção e brilho incomparáveis para o seu veículo com tecnologia de ponta.</p>
+            <a href="https://wa.me/5511996362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank" class="cta-button reveal"><i class="fab fa-whatsapp"></i>Fale com um Especialista</a>
         </div>
     </section>
 
@@ -218,10 +252,10 @@
         <div class="container">
             <h2 class="reveal">Serviços de <span>Excelência</span></h2>
             <div class="servicos-grid">
-                <div class="servico-card reveal"><div class="icon"><i class="fas fa-gem"></i></div><h3>Cristalização</h3><p>Aplicação de selantes de alta tecnologia para um brilho espelhado e proteção duradoura contra intempéries.</p></div>
+                <div class="servico-card reveal"><div class="icon"><i class="fas fa-gem"></i></div><h3>Vitrificação</h3><p>Aplicação de revestimento cerâmico de alta durabilidade para um brilho intenso e proteção superior.</p></div>
                 <div class="servico-card reveal"><div class="icon"><i class="fas fa-swatchbook"></i></div><h3>Polimento Técnico</h3><p>Processo meticuloso que elimina imperfeições, restaura a cor e revela a profundidade original da pintura.</p></div>
-                <div class="servico-card reveal"><div class="icon"><i class="fas fa-oil-can"></i></div><h3>Troca de Óleo</h3><p>Utilizamos apenas lubrificantes sintéticos premium, seguindo rigorosamente as especificações do fabricante.</p></div>
-                <div class="servico-card reveal"><div class="icon"><i class="fas fa-spray-can-sparkles"></i></div><h3>Higienização</h3><p>Limpeza bactericida a vapor e ozônio que purifica o interior do veículo, garantindo saúde e conforto.</p></div>
+                <div class="servico-card reveal"><div class="icon"><i class="fas fa-car-side"></i></div><h3>Cristalização</h3><p>Aplicação de selantes de alta tecnologia para um brilho espelhado e proteção duradoura contra intempéries.</p></div>
+                <div class="servico-card reveal"><div class="icon"><i class="fas fa-spray-can-sparkles"></i></div><h3>Higienização</h3><p>Limpeza bactericida detalhada que purifica o interior do veículo, garantindo saúde e conforto.</p></div>
             </div>
         </div>
         <div class="slanted-divider bottom-divider"></div>
@@ -232,38 +266,35 @@
             <h2 class="reveal">Catálogo Completo de <span>Cuidados</span></h2>
             <div class="tabs-container reveal">
                 <div class="tabs-nav">
-                    <button class="tab-link active" data-tab="tab-1">Performance</button>
-                    <button class="tab-link" data-tab="tab-2">Estética</button>
-                    <button class="tab-link" data-tab="tab-3">Proteção</button>
+                    <button class="tab-link active" data-tab="tab-1">Estética e Limpeza</button>
+                    <button class="tab-link" data-tab="tab-2">Vitrificação e Proteção</button>
+                    <button class="tab-link" data-tab="tab-3">Cuidados Específicos</button>
                 </div>
                 <div class="tabs-content">
                     <div id="tab-1" class="tab-pane active">
-                      
                         <div class="services-item-list">
-                            <div class="service-item"><i class="fas fa-cogs"></i>Manutenção de Freios</div>
-                            <div class="service-item"><i class="fas fa-cogs"></i>Revisão de Suspensão</div>
-                            <div class="service-item"><i class="fas fa-cogs"></i>Alinhamento e Balanceamento 3D</div>
-                            <div class="service-item"><i class="fas fa-cogs"></i>Revitalização de Faróis</div>
-                            <div class="service-item"><i class="fas fa-cogs"></i>Cristalização de Vidros</div>
+                            <div class="service-item"><i class="fas fa-swatchbook"></i>Polimento Técnico</div>
+                            <div class="service-item"><i class="fas fa-brush"></i>Polimento Comercial</div>
+                            <div class="service-item"><i class="fas fa-lightbulb"></i>Polimento de Faróis com Revestimento Cerâmico</div>
+                            <div class="service-item"><i class="fas fa-soap"></i>Higienização Automotiva Completa</div>
+                            <div class="service-item"><i class="fas fa-windshield"></i>Lavagem Técnica de Chassis e Motor</div>
                         </div>
                     </div>
                     <div id="tab-2" class="tab-pane">
                         <div class="services-item-list">
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Vitrificação de Pintura</div>
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Revitalização de Plásticos</div>
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Polimento de Metais</div>
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Detalhamento Completo</div>
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Pintura de Rodas</div>
-                            <div class="service-item"><i class="fas fa-paint-brush"></i>Restauração de Couro</div>
+                            <div class="service-item"><i class="fas fa-gem"></i>Vitrificação de Pintura</div>
+                            <div class="service-item"><i class="fas fa-shield-alt"></i>Vitrificação de Plásticos</div>
+                            <div class="service-item"><i class="fas fa-chair"></i>Vitrificação de Couro</div>
+                            <div class="service-item"><i class="fas fa-star"></i>Cristalização de Pintura</div>
+                            <div class="service-item"><i class="fas fa-tint-slash"></i>Impermeabilização de Bancos</div>
                         </div>
                     </div>
                     <div id="tab-3" class="tab-pane">
                          <div class="services-item-list">
-                            <div class="service-item"><i class="fas fa-shield-alt"></i>Lavagem Técnica Detalhada</div>
-                            <div class="service-item"><i class="fas fa-shield-alt"></i>Limpeza de Motor a Vapor</div>
-                            <div class="service-item"><i class="fas fa-shield-alt"></i>Higienização de Ar-Condicionado</div>
-                            <div class="service-item"><i class="fas fa-shield-alt"></i>Aplicação de PPF</div>
-                            <div class="service-item"><i class="fas fa-shield-alt"></i>Envelopamento Premium</div>
+                            <div class="service-item"><i class="fas fa-cogs"></i>Limpeza de Arrefecimento</div>
+                            <div class="service-item"><i class="fas fa-wind"></i>Higienização de Ar Condicionado (Oxisanitização)</div>
+                            <div class="service-item"><i class="fas fa-car-side"></i>Cristalização de Vidros</div>
+                            <div class="service-item"><i class="fas fa-cloud-rain"></i>Remoção de Chuva Ácida dos Vidros</div>
                         </div>
                     </div>
                 </div>
@@ -287,12 +318,33 @@
              <div class="contadores">
                 <div class="contador"><h3 data-target="5000">0+</h3><p>Clientes Satisfeitos</p></div>
                 <div class="contador"><h3 data-target="1200">0+</h3><p>Serviços Premium</p></div>
-                <div class="contador"><h3 data-target="15">0+</h3><p>Anos de Experiência</p></div>
+                <div class="contador"><h3 data-target="20">0+</h3><p>Anos no Mercado</p></div>
              </div>
+        </div>
+    </section>
+
+    <section id="redes-sociais">
+        <div class="container">
+            <h2 class="reveal">Acompanhe nosso <span>Trabalho</span></h2>
+            <div class="social-grid">
+                <div class="social-card reveal">
+                    <div class="social-icon instagram"><i class="fab fa-instagram"></i></div>
+                    <h3>Instagram</h3>
+                    <p>Veja o antes e depois dos nossos projetos, dicas e novidades diárias.</p>
+                    <a href="https://www.instagram.com/drlube_/" target="_blank" class="cta-button"><i class="fas fa-users"></i>Seguir Agora</a>
+                </div>
+                <div class="social-card reveal">
+                    <div class="social-icon tiktok"><i class="fab fa-tiktok"></i></div>
+                    <h3>TikTok</h3>
+                    <p>Assista vídeos rápidos dos nossos processos e transformações incríveis.</p>
+                    <a href="https://www.tiktok.com/@dr..lube" target="_blank" class="cta-button"><i class="fas fa-video"></i>Acessar Perfil</a>
+                </div>
+            </div>
         </div>
     </section>
     
     <section id="localizacao">
+        <div class="slanted-divider top-divider" style="background: var(--azul-meianoite);"></div>
         <div class="container">
             <h2 class="reveal">Nosso Centro <span>Técnico</span></h2>
             <div class="map-container">
@@ -312,8 +364,8 @@
         <div class="container">
             <h2 class="reveal">Dúvidas <span>Frequentes</span></h2>
             <div class="accordion">
-                <div class="accordion-item reveal"><div class="accordion-header">Qual a durabilidade da vitrificação?<i class="fas fa-plus"></i></div><div class="accordion-content"><p>Utilizamos vitrificadores com nanotecnologia que podem durar de 3 a 5 anos, dependendo dos cuidados e da manutenção periódica, para a qual fornecemos todas as orientações.</p></div></div>
-                <div class="accordion-item reveal"><div class="accordion-header">O PPF altera a cor do carro?<i class="fas fa-plus"></i></div><div class="accordion-content"><p>Não. O PPF (Paint Protection Film) que utilizamos é 100% transparente, de alta performance e autorregenerativo, protegendo a pintura original contra riscos e impactos sem alterar sua estética.</p></div></div>
+                <div class="accordion-item reveal"><div class="accordion-header">Qual a durabilidade da vitrificação?<i class="fas fa-plus"></i></div><div class="accordion-content"><p>Utilizamos vitrificadores com nanotecnologia que podem durar de 1 a 5 anos, dependendo do produto escolhido, dos cuidados e da manutenção periódica, para a qual fornecemos todas as orientações.</p></div></div>
+                <div class="accordion-item reveal"><div class="accordion-header">O polimento técnico remove todos os riscos?<i class="fas fa-plus"></i></div><div class="accordion-content"><p>O polimento técnico remove a grande maioria dos riscos superficiais e marcas de uso. Riscos que atingiram a camada de primer ou a lataria do veículo podem necessitar de outros tipos de reparo. Avaliamos cada caso individualmente.</p></div></div>
                 <div class="accordion-item reveal"><div class="accordion-header">Quais as formas de pagamento?<i class="fas fa-plus"></i></div><div class="accordion-content"><p>Aceitamos Pix, transferência e cartões de crédito das principais bandeiras, com opção de parcelamento em até 10x para pacotes de serviços. Consulte as condições.</p></div></div>
             </div>
         </div>
@@ -323,7 +375,7 @@
         <div class="container reveal">
             <h2>Seu carro merece o tratamento definitivo.</h2>
             <p>Vagas limitadas para agendamentos esta semana. Garanta o seu horário e fale agora com nossa equipe de especialistas.</p>
-            <a href="https://wa.me/5511998362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank" class="cta-button"><i class="fab fa-whatsapp"></i>Agendar Serviço Agora</a>
+            <a href="https://wa.me/5511996362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank" class="cta-button"><i class="fab fa-whatsapp"></i>Agendar Serviço Agora</a>
         </div>
     </section>
     
@@ -331,13 +383,17 @@
         <div class="container">
             <a href="#hero" class="footer-logo"><img src="https://i.ibb.co/Y7GDcjMw/DR-LUBE.png" alt="Logo DR LUBE"></a>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://wa.me/5511998362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/drlube_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@dr..lube" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://wa.me/5511996362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
             <p class="footer-copyright">&copy; 2025 DR LUBE. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <a href="https://wa.me/5511996362614?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço%20na%20DR%20LUBE" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.8 0-67.6-9.5-97.2-27.2l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+    </a>
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
@@ -348,6 +404,16 @@ document.addEventListener("DOMContentLoaded", function() {
         const icon = mobileMenuIcon.querySelector('i');
         icon.classList.toggle('fa-bars');
         icon.classList.toggle('fa-times');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+                mobileMenuIcon.querySelector('i').classList.add('fa-bars');
+                mobileMenuIcon.querySelector('i').classList.remove('fa-times');
+            }
+        });
     });
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
@@ -367,10 +433,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 const target = +counter.getAttribute('data-target');
                 let count = 0;
                 const updateCount = () => {
-                    const increment = target / 100;
+                    const increment = Math.ceil(target / 100);
                     count = Math.min(count + increment, target);
                     counter.innerText = Math.ceil(count) + '+';
-                    if (count < target) requestAnimationFrame(updateCount);
+                    if (count < target) {
+                        requestAnimationFrame(updateCount);
+                    } else {
+                        counter.innerText = target + '+';
+                    }
                 };
                 updateCount();
             });
